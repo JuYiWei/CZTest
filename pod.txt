@@ -1,0 +1,11 @@
+
+
+
+
+
+
+pod spec lint CZTest.podspec --use-libraries --allow-warnings --verbose
+pod trunk push CZTest.podspec --use-libraries --allow-warnings --verbose
+
+
+pod search CZTest --simple

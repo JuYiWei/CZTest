@@ -11,7 +11,6 @@
 #import "Test/CZTest.h"
 
 @interface ViewController ()
-@property (nonatomic, strong) CZLog *log;
 
 @end
 
@@ -20,17 +19,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [[CZLog manager] config];
-    
-    
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     CZDLogInfo(@"123");
+    
+    
+    
 }
 
 - (void)motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event {
     NSLog(@"1");
-    [[CZLog manager] showInfo:self.view];
+    [[CZLog manager] showInfoInView:self.view];
 }
 
 @end

@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "CZTest"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "cz self CZTest summary"
   s.description  = "cz self CZTest description"
   s.homepage     = "https://github.com/JuYiWei/CZTest"

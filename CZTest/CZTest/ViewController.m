@@ -7,8 +7,13 @@
 //
 
 #import "ViewController.h"
+
+
 #import "Test/CZLog.h"
 #import "Test/CZTest.h"
+
+
+NSInteger const ddLogLevel = DDLogLevelAll;
 
 @interface ViewController ()
 
@@ -18,11 +23,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor orangeColor];
     [[CZLog manager] config];
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    CZDLogInfo(@"123");
+//    CZ_LOG_INFO(@"123");
     
     
     

@@ -2,9 +2,9 @@
 Pod::Spec.new do |s|
 
   s.name         = "CZTest"
-  s.version      = "0.0.2"
-  s.summary      = "cz self CZTest summary"
-  s.description  = "cz self CZTest description"
+  s.version      = "0.0.3"
+  s.summary      = "cz self CZTest"
+  s.description  = "random and log"
   s.homepage     = "https://github.com/JuYiWei/CZTest"
   s.license      = "MIT"
   s.author       = { "juyw" => "757832801@qq.com" }

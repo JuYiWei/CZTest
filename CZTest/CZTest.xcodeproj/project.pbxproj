@@ -16,8 +16,8 @@
 		84424547225D86F200EB432E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84424546225D86F200EB432E /* main.m */; };
 		84424551225D86F200EB432E /* CZTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84424550225D86F200EB432E /* CZTestTests.m */; };
 		8442455C225D86F300EB432E /* CZTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8442455B225D86F300EB432E /* CZTestUITests.m */; };
-		8442456C225D884400EB432E /* CZTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8442456B225D884400EB432E /* CZTest.m */; };
 		84424575225D921800EB432E /* CZLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 84424574225D921800EB432E /* CZLog.m */; };
+		84FD5EF523347EBD00D6E1A0 /* CZTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FD5EF323347EBD00D6E1A0 /* CZTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,11 +56,11 @@
 		84424557225D86F200EB432E /* CZTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CZTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8442455B225D86F300EB432E /* CZTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CZTestUITests.m; sourceTree = "<group>"; };
 		8442455D225D86F300EB432E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8442456A225D884400EB432E /* CZTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CZTest.h; sourceTree = "<group>"; };
-		8442456B225D884400EB432E /* CZTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CZTest.m; sourceTree = "<group>"; };
 		84424573225D921800EB432E /* CZLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CZLog.h; sourceTree = "<group>"; };
 		84424574225D921800EB432E /* CZLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CZLog.m; sourceTree = "<group>"; };
 		8452C6F9225DFBB0002FC861 /* CZTestHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CZTestHeader.h; sourceTree = "<group>"; };
+		84FD5EF323347EBD00D6E1A0 /* CZTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZTest.m; sourceTree = "<group>"; };
+		84FD5EF423347EBD00D6E1A0 /* CZTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZTest.h; sourceTree = "<group>"; };
 		B66CE3081466BEC9B687555F /* libPods-CZTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CZTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -160,8 +160,8 @@
 			isa = PBXGroup;
 			children = (
 				8452C6F9225DFBB0002FC861 /* CZTestHeader.h */,
-				8442456A225D884400EB432E /* CZTest.h */,
-				8442456B225D884400EB432E /* CZTest.m */,
+				84FD5EF423347EBD00D6E1A0 /* CZTest.h */,
+				84FD5EF323347EBD00D6E1A0 /* CZTest.m */,
 				84424573225D921800EB432E /* CZLog.h */,
 				84424574225D921800EB432E /* CZLog.m */,
 			);
@@ -329,10 +329,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				84424575225D921800EB432E /* CZLog.m in Sources */,
-				8442456C225D884400EB432E /* CZTest.m in Sources */,
 				8442453C225D86F000EB432E /* ViewController.m in Sources */,
 				84424547225D86F200EB432E /* main.m in Sources */,
 				84424539225D86F000EB432E /* AppDelegate.m in Sources */,
+				84FD5EF523347EBD00D6E1A0 /* CZTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,7 +505,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TZUL3JZQ3E;
+				DEVELOPMENT_TEAM = 4C72AXZXH7;
 				INFOPLIST_FILE = CZTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -524,7 +524,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TZUL3JZQ3E;
+				DEVELOPMENT_TEAM = 4C72AXZXH7;
 				INFOPLIST_FILE = CZTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10;
 				LD_RUNPATH_SEARCH_PATHS = (

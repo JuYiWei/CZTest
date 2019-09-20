@@ -11,6 +11,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+#define CZ_TEST_INT_STRING     [CZTest randomNumberString]
+#define CZ_TEST_FLOAT_STRING   [NSString stringWithFormat:@"%.2f", ([[CZTest randomNumberString] floatValue] / 100.)]
+#define CZ_TEST_STRING         [CZTest randomChineseString]
+
 @interface CZTest : NSObject
 
 #pragma mark - 颜色
@@ -72,59 +76,62 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (CGFloat)randomFloatValue:(NSInteger)max;
 
+/**
+ 随机整数字符串
+
+ @param max max description
+ @return return value description
+ */
++ (NSString *)randomIntString:(NSInteger)max;
+
+/**
+ 随机小数字符串
+
+ @param max max description
+ @return return value description
+ */
++ (NSString *)randomFloatString:(NSInteger)max;
+
 #pragma mark - 随机字符串
 
-/**
- 随机字符
-
- @return return value description
- */
+/** 随机字符 */
 + (NSString *)randomString;
 
-/**
- 随机字符 指定长度
-
- @param len len description
- @return return value description
- */
+/** 随机字符 指定长度 */
 + (NSString *)randomStringWithLength:(NSInteger)len;
 
-/**
- 随机数字字母符号 指定长度
+/** 随机数字字符串 */
++ (NSString *)randomNumberString;
 
- @param len len description
- @return return value description
- */
+/** 随机数字字符串 指定长度 */
++ (NSString *)randomNumberStringWithLength:(NSInteger)len;
+
+/** 随机数字字母符号字符串 */
++ (NSString *)randomEnglishString;
+
+/** 随机数字字母符号 指定长度 */
 + (NSString *)randomEnglishStringWithLength:(NSInteger)len;
 
-/**
- 随机中文字符 指定长度
+/** 随机中文字符串 */
++ (NSString *)randomChineseString;
 
- @param len len description
- @return return value description
- */
+/** 随机中文字符 指定长度 */
 + (NSString *)randomChineseStringWithLength:(NSInteger)len;
 
-/**
- 随机数字
+#pragma mark - 随机字符
 
- @return return value description
- */
+/** 随机数字 */
 + (NSString *)randomNumberCharacter;
 
-/**
- 随机字母
-
- @return return value description
- */
+/** 随机字母 */
 + (NSString *)randomEnglishCharacter;
 
-/**
- 随机数字字母符号
+/** 随机数字字母符号 */
++ (NSString *)randomLetterCharacter;
 
- @return return value description
- */
+/** 随机数字字母符号 */
 + (NSString *)randomChineseCharacter;
+
 
 @end
 

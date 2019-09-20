@@ -16,8 +16,6 @@ NSString *const CZLogLevelInfoPrefix = @"📄";
 NSString *const CZLogLevelDebugPrefix = @"🔧";
 NSString *const CZLogLevelVerbosePrefix = @"🔍";
 
-NSInteger const ddLogLevel = DDLogLevelAll;
-
 @interface CZLog ()<UIDocumentInteractionControllerDelegate>
 @property (nonatomic, strong) DDFileLogger *fileLogger;
 @property (nonatomic, strong) UIDocumentInteractionController *documentController;

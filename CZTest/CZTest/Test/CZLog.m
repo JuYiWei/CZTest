@@ -17,7 +17,9 @@ NSString *const CZLogLevelDebugPrefix = @"🔧";
 NSString *const CZLogLevelVerbosePrefix = @"🔍";
 
 @interface CZLog ()<UIDocumentInteractionControllerDelegate>
+#ifdef DEBUG
 @property (nonatomic, strong) DDFileLogger *fileLogger;
+#endif
 @property (nonatomic, strong) UIDocumentInteractionController *documentController;
 @end
 
@@ -33,24 +35,29 @@ static CZLog *single;
 }
 
 - (void)config {
+#ifdef DEBUG
     [DDLog addLogger:[DDOSLogger sharedInstance]];
     [DDLog addLogger:self.fileLogger];
+#endif
 }
 
 - (void)showInfoInView:(UIView *)view {
+#ifdef DEBUG
     NSString *path = self.fileLogger.currentLogFileInfo.filePath;
     [self share:path inView:view];
+#endif
 }
 
 - (void)share:(NSString *)path inView:(UIView *)view {
+#ifdef DEBUG
     self.documentController = [UIDocumentInteractionController interactionControllerWithURL:[NSURL fileURLWithPath:path]];
     self.documentController.delegate = self;
     self.documentController.UTI = @"public.data";
     [self.documentController presentOpenInMenuFromRect:CGRectZero inView:view animated:YES];
+#endif
 }
 
-#pragma mark - Getter
-
+#ifdef DEBUG
 - (DDFileLogger *)fileLogger {
     if (!_fileLogger) {
         _fileLogger = [[DDFileLogger alloc] init];
@@ -59,5 +66,7 @@ static CZLog *single;
     }
     return _fileLogger;
 }
+#endif
 
 @end
+

@@ -8,9 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import <CocoaLumberjack/CocoaLumberjack.h>
 
-#ifdef CZ_DEBUG
+#ifdef DEBUG
+
+#import <CocoaLumberjack/CocoaLumberjack.h>
 
 /** 错误 */
 #define CZ_LOG_ERROR(fmt, ...)      DDLogError((@"%@ [Line %d]\n %s\n" fmt @"\n_"), CZLogLevelErrorPrefix, __LINE__, __PRETTY_FUNCTION__, ##__VA_ARGS__);

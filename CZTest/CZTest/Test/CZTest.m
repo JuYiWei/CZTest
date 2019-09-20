@@ -71,7 +71,7 @@
 
 // 随机整数字符串
 + (NSString *)randomIntString:(NSInteger)max {
-    return [NSString stringWithFormat:@"%ld", [CZTest randomIntValue:max]];
+    return [NSString stringWithFormat:@"%ld", (long)[CZTest randomIntValue:max]];
 }
 
 // 随机小数字符串
